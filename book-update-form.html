@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Update Form</title>
+</head>
+<body>
+<div align="center">
+
+		<h2>Update Your Appointment Details</h2>
+		<br>
+		<hr>
+
+		<form:form action="processUpdate" method="post" modelAttribute="book">
+
+			<label for="id">Appointment Id</label>
+			<form:input type="text" path="userAppointmentid" />
+			
+			<br>
+			<br>
+
+			<label for="name">User Name</label>
+			<form:input type="text" path="userName" />
+			
+			<br>
+			<br>
+
+			<label for="author">Doctor</label>
+			<br>
+			<form:textarea path="userDoctor" rows="5" cols="30" />
+			<br>
+			<br>
+			
+			<label for="userTimeslot">Time Slot</label>
+			<form:input type="text" path="userTimeslot" />
+			<br>
+			<br>
+			
+			<label for="quantity">Date</label>
+			<form:input type="text" path="userDate" />
+			<br>
+			<br>
+			
+			<input type="submit" value="submit" />
+
+		</form:form>
+		<hr>
+
+	</div>
+</body>
+</html>
